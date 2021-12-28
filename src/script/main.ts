@@ -3,7 +3,6 @@ import "../style/style.scss";
 const profileImageElement: HTMLElement = document.querySelector(".profile")!;
 
 profileImageElement.addEventListener("click", () => {
-  console.log("loaded");
   startAnimation();
 })
 
@@ -17,6 +16,5 @@ const startAnimation = () => {
 }
 
 window.addEventListener("load", () => {
-  console.log("loaded");
   startAnimation();
 })
