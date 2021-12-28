@@ -2,3 +2,37 @@ html {
   background-color: #2e343f;
   color: white;
 }
+
+a {
+  color: white;
+}
+
+.container {
+  font-size: 24px;
+  margin-top: 60px;
+  text-align: center;
+
+  .profile {
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .links {
+    line-height: 1.5;
+    list-style: none;
+  }
+
+  .rotate {
+    animation: rotation .8s cubic-bezier(0, 0.3, 0.2, 0.9) 0s 1 normal none running;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotateZ(0);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
