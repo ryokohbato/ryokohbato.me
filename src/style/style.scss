@@ -19,15 +19,29 @@ a {
   .profile {
     border-radius: 50%;
     cursor: pointer;
+    height: 400px;
+    width: 400px;
   }
 
   .links {
     line-height: 1.5;
     list-style: none;
+    padding: 0;
   }
 
   .rotate {
     animation: rotation .8s cubic-bezier(0, 0.3, 0.2, 0.9) 0s 1 normal none running;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    font-size: 16px;
+
+    .profile {
+      height: 50%;
+      width: 50%;
+    }
   }
 }
 
