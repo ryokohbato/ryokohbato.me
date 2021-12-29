@@ -4,7 +4,7 @@ const profileImageElement: HTMLElement = document.querySelector(".profile")!;
 
 profileImageElement.addEventListener("click", () => {
   startAnimation();
-})
+});
 
 const startAnimation = () => {
   if (profileImageElement.classList.contains("rotate")) {
@@ -13,8 +13,8 @@ const startAnimation = () => {
   setTimeout(() => {
     profileImageElement.classList.add("rotate");
   }, 100);
-}
+};
 
 window.addEventListener("load", () => {
   startAnimation();
-})
+});
