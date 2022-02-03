@@ -17,11 +17,12 @@ export default class Profile extends Vue {
 <style scoped lang="scss">
 .icon {
   border-radius: 50%;
-  height: 120px;
-  width: 120px;
+  height: 160px;
+  width: 160px;
 }
 
 h1 {
-  margin-top: 12px;
+  font-size: 18px;
+  margin-top: 24px;
 }
 </style>

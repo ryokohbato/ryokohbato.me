@@ -1,12 +1,14 @@
 <template>
   <div id="app">
     <Profile name="ryokohbato"/>
+    <Links/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import Profile from "./components/Profile.vue";
+import Links from "./components/Links/Links.vue";
 
 // destyle.css を読み込み
 import "../node_modules/destyle.css/destyle.css"
@@ -14,6 +16,7 @@ import "../node_modules/destyle.css/destyle.css"
 @Component({
   components: {
     Profile,
+    Links,
   },
 })
 export default class App extends Vue {}
@@ -21,7 +24,7 @@ export default class App extends Vue {}
 
 <style lang="scss">
 html {
-  background-color: #1c2630;
+  background-color: #2E343F;
 }
 
 #app {
@@ -31,9 +34,5 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   padding-top: 60px;
-}
-
-h1 {
-  font-size: 18px;
 }
 </style>
