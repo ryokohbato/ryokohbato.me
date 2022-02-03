@@ -1,29 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App" />
+    <Profile name="ryokohbato"/>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import HelloWorld from "./components/HelloWorld.vue";
+import Profile from "./components/Profile.vue";
+
+// destyle.css を読み込み
+import "../node_modules/destyle.css/destyle.css"
 
 @Component({
   components: {
-    HelloWorld,
+    Profile,
   },
 })
 export default class App extends Vue {}
 </script>
 
 <style lang="scss">
+html {
+  background-color: #1c2630;
+}
+
 #app {
+  color: white;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  padding-top: 60px;
+}
+
+h1 {
+  font-size: 18px;
 }
 </style>
