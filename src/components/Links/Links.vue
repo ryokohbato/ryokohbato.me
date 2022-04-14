@@ -2,6 +2,7 @@
   <div class="links">
     <Link href="https://twitter.com/ryokohbato" text="Twitter"/>
     <Link href="https://github.com/ryokohbato" text="GitHub"/>
+    <Link href="https://zenn.dev/ryokohbato" text="Zenn"/>
   </div>
 </template>
 
